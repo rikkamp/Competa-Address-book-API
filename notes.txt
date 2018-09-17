@@ -1,0 +1,19 @@
+$.ajax({
+	url: 'https://randomuser.me/api/',
+	dataType: 'json',
+	success: function(data) {
+		console.log(data);
+	}
+});
+function getWeekNummer() {
+	fetch("./function.php?f=weekNummer")
+		.then(response => {
+			return response.text();
+		})
+		.then(responseText => {
+			document.querySelector(".table--week-nr__current").value = responseText;
+		})
+		.catch(error => {
+			console.error(error);
+		});
+}
