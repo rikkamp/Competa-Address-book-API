@@ -6,3 +6,6 @@ understanding fetch.
 understanding how you can open a json file with java.
 
 making a listener for the divs that are made in the loop in the fetch. The problem with this was that fetch is automatic a promise and because I finnaly understood the fetch method for loading in api's I declined to change it to a normal xhttp function. It took a while before I understood the fetch function. If what I think is correct.
+
+Also I had some dificulties with sorting the first names.
+After asking some help of vijay I knew what my mistake was I used the right function but I never selected the array I just slected the object.
